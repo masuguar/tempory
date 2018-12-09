@@ -1,55 +1,93 @@
 package com.masuguar.foolish.resposity.entity;
 
+import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "city")
+@Table(name = "CITY")
 public class CityInfo {
     @Id
-    private Integer id;
+    @Column(name = "CITY_ID")
+    private Integer cityId;
 
-    private String code;
+    @Column(name = "CITY_CODE")
+    private String cityCode;
 
-    private String name;
+    @Column(name = "CITY_NAME")
+    private String cityName;
+
+    @Column(name = "MTIME")
+    private Date mtime;
+
+    @Column(name = "CTIME")
+    private Date ctime;
 
     /**
-     * @return id
+     * @return CITY_ID
      */
-    public Integer getId() {
-        return id;
+    public Integer getCityId() {
+        return cityId;
     }
 
     /**
-     * @param id
+     * @param cityId
      */
-    public void setId(Integer id) {
-        this.id = id;
+    public void setCityId(Integer cityId) {
+        this.cityId = cityId;
     }
 
     /**
-     * @return code
+     * @return CITY_CODE
      */
-    public String getCode() {
-        return code;
+    public String getCityCode() {
+        return cityCode;
     }
 
     /**
-     * @param code
+     * @param cityCode
      */
-    public void setCode(String code) {
-        this.code = code;
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
     }
 
     /**
-     * @return name
+     * @return CITY_NAME
      */
-    public String getName() {
-        return name;
+    public String getCityName() {
+        return cityName;
     }
 
     /**
-     * @param name
+     * @param cityName
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+
+    /**
+     * @return MTIME
+     */
+    public Date getMtime() {
+        return mtime;
+    }
+
+    /**
+     * @param mtime
+     */
+    public void setMtime(Date mtime) {
+        this.mtime = mtime;
+    }
+
+    /**
+     * @return CTIME
+     */
+    public Date getCtime() {
+        return ctime;
+    }
+
+    /**
+     * @param ctime
+     */
+    public void setCtime(Date ctime) {
+        this.ctime = ctime;
     }
 }

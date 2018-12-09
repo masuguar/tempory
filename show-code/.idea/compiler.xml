@@ -15,14 +15,24 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api" target="1.5" />
-      <module name="business" target="1.5" />
-      <module name="modules" target="1.5" />
-      <module name="provider" target="1.5" />
-      <module name="refrerence" target="1.5" />
-      <module name="show-code" target="1.5" />
-      <module name="start" target="1.5" />
-      <module name="view" target="1.5" />
+      <module name="api" target="1.6" />
+      <module name="business" target="1.6" />
+      <module name="modules" target="1.6" />
+      <module name="provider" target="1.6" />
+      <module name="refrerence" target="1.6" />
+      <module name="show-code" target="1.6" />
+      <module name="start" target="1.6" />
+      <module name="view" target="1.6" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="" />
+      <module name="business" options="" />
+      <module name="provider" options="" />
+      <module name="refrerence" options="" />
+      <module name="start" options="" />
+      <module name="view" options="" />
+    </option>
   </component>
 </project>

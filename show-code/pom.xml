@@ -14,15 +14,50 @@
         <module>view</module>
     </modules>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
-        <dependency>
-            <groupId>org.xerial</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.25.2</version>
-        </dependency>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.17.RELEASE</version>
+    </parent>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>1.4.197</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>2.0.4</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
@@ -32,11 +67,17 @@
                 <version>1.0-SNAPSHOT</version>
                 <configuration>
                     <!--数据库连接信息-->
-                    <connection>
+<!--                    <connection>
                         <jdbcUrl>jdbc:sqlite:E:\2018\FoolishMapper\show-code\start\src\main\resources\db\show-code.db</jdbcUrl>
                         <driverClass>org.sqlite.JDBC</driverClass>
                         <username>xxx</username>
                         <password>yyy</password>
+                    </connection>-->
+                    <connection>
+                        <jdbcUrl>jdbc:h2:~/test;AUTO_SERVER=TRUE</jdbcUrl>
+                        <driverClass>org.h2.Driver</driverClass>
+                        <username>root</username>
+                        <password>Abc12345</password>
                     </connection>
                     <packageInfo>
                         <!-- java源码路径,配置为相对路径，相对于pom所在的文件夹 -->
@@ -47,7 +88,6 @@
                         <javaEntityPackage>com.masuguar.foolish.resposity.entity</javaEntityPackage>
                         <!-- 将要生成的Dao接口文件所在包 -->
                         <javaMapperPackage>com.masuguar.foolish.resposity.mapper</javaMapperPackage>
-
                         <!-- 所有生成Mapper的基类，全限定名 -->
                         <baseMapper>com.masuguar.foolish.resposity.base.CommonMapper</baseMapper>
                         <!-- 将要生成的xml所在包,为空时，将取值javaMapperPackage -->
@@ -68,10 +108,17 @@
                 </configuration>
                 <dependencies>
                     <dependency>
+                        <groupId>com.h2database</groupId>
+                        <artifactId>h2</artifactId>
+                        <version>1.4.197</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                    <!--
+                    <dependency>
                         <groupId>org.xerial</groupId>
                         <artifactId>sqlite-jdbc</artifactId>
                         <version>3.25.2</version>
-                    </dependency>
+                    </dependency>-->
                 </dependencies>
             </plugin>
         </plugins>

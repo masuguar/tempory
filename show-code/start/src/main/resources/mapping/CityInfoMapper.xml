@@ -5,8 +5,10 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="code" jdbcType="VARCHAR" property="code" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
+    <id column="CITY_ID" jdbcType="INTEGER" property="cityId" />
+    <result column="CITY_CODE" jdbcType="VARCHAR" property="cityCode" />
+    <result column="CITY_NAME" jdbcType="VARCHAR" property="cityName" />
+    <result column="MTIME" jdbcType="DATE" property="mtime" />
+    <result column="CTIME" jdbcType="DATE" property="ctime" />
   </resultMap>
 </mapper>

@@ -1,64 +1,56 @@
 package com.masuguar.foolish.resposity.entity;
 
+import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "user_info")
+@Table(name = "USER_INFO")
 public class UserInfo {
     @Id
-    private Integer id;
+    @Column(name = "USER_ID")
+    private Integer userId;
 
-    private Integer username;
+    @Column(name = "USER_CODE")
+    private String userCode;
 
-    private String password;
-
+    @Column(name = "NAME")
     private String name;
 
-    private Integer age;
+    @Column(name = "MTIME")
+    private Date mtime;
+
+    @Column(name = "CTIME")
+    private Date ctime;
 
     /**
-     * @return id
+     * @return USER_ID
      */
-    public Integer getId() {
-        return id;
+    public Integer getUserId() {
+        return userId;
     }
 
     /**
-     * @param id
+     * @param userId
      */
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     /**
-     * @return username
+     * @return USER_CODE
      */
-    public Integer getUsername() {
-        return username;
+    public String getUserCode() {
+        return userCode;
     }
 
     /**
-     * @param username
+     * @param userCode
      */
-    public void setUsername(Integer username) {
-        this.username = username;
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
     }
 
     /**
-     * @return password
-     */
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * @param password
-     */
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    /**
-     * @return name
+     * @return NAME
      */
     public String getName() {
         return name;
@@ -72,16 +64,30 @@ public class UserInfo {
     }
 
     /**
-     * @return age
+     * @return MTIME
      */
-    public Integer getAge() {
-        return age;
+    public Date getMtime() {
+        return mtime;
     }
 
     /**
-     * @param age
+     * @param mtime
      */
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setMtime(Date mtime) {
+        this.mtime = mtime;
+    }
+
+    /**
+     * @return CTIME
+     */
+    public Date getCtime() {
+        return ctime;
+    }
+
+    /**
+     * @param ctime
+     */
+    public void setCtime(Date ctime) {
+        this.ctime = ctime;
     }
 }
