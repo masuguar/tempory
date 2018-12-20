@@ -1,11 +1,14 @@
 package com.masuguar.foolish.resposity.entity;
 
+import com.masuguar.foolish.annotation.InheritTable;
+import com.masuguar.foolish.resposity.formatter.UserTableForammter;
 import tk.mybatis.mapper.annotation.KeySql;
 
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "USER_INFO")
+@InheritTable( key = "ctime", formatter = UserTableForammter.class)
 public class UserInfo {
     @Id
     @KeySql(useGeneratedKeys = false, sql = "select nextval('s_user_info')")
