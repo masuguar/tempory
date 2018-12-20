@@ -1,11 +1,14 @@
 package com.masuguar.foolish.resposity.entity;
 
+import tk.mybatis.mapper.annotation.KeySql;
+
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "USER_INFO")
 public class UserInfo {
     @Id
+    @KeySql(useGeneratedKeys = false, sql = "select nextval('s_user_info')")
     @Column(name = "USER_ID")
     private Integer userId;
 
@@ -20,6 +23,17 @@ public class UserInfo {
 
     @Column(name = "CTIME")
     private Date ctime;
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "userId=" + userId +
+                ", userCode='" + userCode + '\'' +
+                ", name='" + name + '\'' +
+                ", mtime=" + mtime +
+                ", ctime=" + ctime +
+                '}';
+    }
 
     /**
      * @return USER_ID

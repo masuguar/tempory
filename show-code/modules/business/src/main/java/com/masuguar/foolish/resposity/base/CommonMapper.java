@@ -10,7 +10,6 @@ import tk.mybatis.mapper.common.base.select.SelectByPrimaryKeyMapper;
 import tk.mybatis.mapper.common.special.InsertListMapper;
 
 public interface CommonMapper<T> extends InsertMapper<T>,
-        InsertListMapper<T>,
         SelectAllMapper<T>,
         SelectByPrimaryKeyMapper<T>,
         BaseDeleteMapper<T>,

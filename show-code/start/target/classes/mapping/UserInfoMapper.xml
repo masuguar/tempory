@@ -5,10 +5,20 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="username" jdbcType="INTEGER" property="username" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="age" jdbcType="INTEGER" property="age" />
+    <id column="USER_ID" jdbcType="INTEGER" property="userId" />
+    <result column="USER_CODE" jdbcType="VARCHAR" property="userCode" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="MTIME" jdbcType="DATE" property="mtime" />
+    <result column="CTIME" jdbcType="DATE" property="ctime" />
   </resultMap>
+
+  <insert id="insertByCreateTable" parameterType="com.masuguar.foolish.resposity.entity.UserInfo" >
+    <selectKey keyProperty="userId" resultType="int" order="BEFORE">
+      select count(*) userId from pg_class where relname = 'user_info${name}'
+    </selectKey>
+    <if test="userId == 0">
+      create table user_info${name}() INHERITS (user_info);
+    </if>
+    insert into  user_info${name} values ( nextval('s_user_info'), #{userCode}, #{ name}, now(), now() )
+  </insert>
 </mapper>
