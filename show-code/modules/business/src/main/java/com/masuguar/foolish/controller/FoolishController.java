@@ -28,7 +28,7 @@ public class FoolishController {
             idiot.setName("maxiuguo");
             idiot.setCtime(new Date());
             idiot.setMtime(new Date());
-            userInfoServiceImpl.insertByCreateTable(idiot);
+            userInfoServiceImpl.insert(idiot);
             List<UserInfo> list =  userInfoServiceImpl.findAll();
             log.info("userinfos = {}",list);
         }catch (Exception e){

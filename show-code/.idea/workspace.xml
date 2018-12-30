@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56d40465-99f6-4aa8-864e-4be23aaac175" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritCreateDialect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/entity/InheritTableInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean-split-table/src/test/java/org/masuguar/foolish/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/InheritTableHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/util/OGNL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clean-split-table/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/annotation/InheritTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/annotation/InheritTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritDialect.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritQueryDialect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/entity/EntityTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/DefaultEntityResolve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/controller/FoolishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/controller/FoolishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/entity/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/formatter/UserTableForammter.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/formatter/UserTableForammter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/EntityTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/EntityTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/DefaultEntityResolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/DefaultEntityResolve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/target/classes/com/masuguar/foolish/controller/FoolishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/target/classes/com/masuguar/foolish/controller/FoolishController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/business/target/classes/com/masuguar/foolish/resposity/entity/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/modules/business/target/classes/com/masuguar/foolish/resposity/entity/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/start/start.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/modules/target/" />
+    <ignored path="$PROJECT_DIR$/view/target/" />
+    <ignored path="$PROJECT_DIR$/modules/refrerence/target/" />
+    <ignored path="$PROJECT_DIR$/modules/business/target/" />
+    <ignored path="$PROJECT_DIR$/start/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/modules/provider/target/" />
+    <ignored path="$PROJECT_DIR$/api/target/" />
+    <ignored path="$PROJECT_DIR$/clean-split-table/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/service/common/CommonService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritCreateDialect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="32" column="73" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/InheritTableHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/util/OGNL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="221" column="30" lean-forward="true" selection-start-line="221" selection-start-column="30" selection-end-line="221" selection-end-column="30" />
+              <folding>
+                <element signature="e#6495#6496#0" expanded="true" />
+                <element signature="e#6548#6549#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/formatter/UserTableForammter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/mapperhelper/SqlHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="54" column="48" selection-end-line="819" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="51" column="43" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/mapperhelper/EntityHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="44" column="25" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sqlProviderAnnotationTypes</find>
+      <find>ProviderSqlSource</find>
+      <find>getBo</find>
+      <find>getSqlSourceFromAnnotations</find>
+      <find>processMappedStatement</find>
+      <find>newSelectKeyMappedStatement</find>
+      <find>generateKeys</find>
+      <find>entityTableMap</find>
+      <find>getEntityClass</find>
+      <find>initEntityNameMap</find>
+      <find>inheritable</find>
+      <find>RawSqlSource</find>
+      <find>getMappedStatement</find>
+      <find>ms</find>
+      <find>isDynamicParameter</find>
+      <find>generateKey</find>
+      <find>newQueryInheritTableStatement</find>
+      <find>formatter</find>
+      <find>tool</find>
+      <find>dyna</find>
+      <find>appendOtheris</find>
+      <find>otherwise</find>
+      <find>appendO</find>
+      <find>appendOtherwise</find>
+      <find>bind</find>
+      <find>dynamicTableName</find>
+      <find>bindVal</find>
+      <find>getBindValue</find>
+      <find>isAnnotationPresent</find>
+      <find>isInheritable</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/start/src/main/resources/db/schema.sql" />
+        <option value="$PROJECT_DIR$/start/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/start/src/main/resources/application.yml.bak" />
+        <option value="$PROJECT_DIR$/start/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/start/src/main/resources/log4j2.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/mapper/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/start/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/start/src/main/resources/mapping/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/DefaultEntityResolve.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/InheritSqlHelper.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/mapper/mapperhelper/SelectKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/controller/FoolishController.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/pom.xml" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/test/java/org/masuguar/foolish/Test.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritDialect.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritQueryDialect.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/entity/InheritTableInfo.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/format/Formatter.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/entity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/annotation/InheritTable.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/entity/EntityTable.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/mapper/provider/base/BaseInsertProvider.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java" />
+        <option value="$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritCreateDialect.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/InheritTableHelper.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/SqlHelper.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/util/OGNL.java" />
+        <option value="$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/formatter/UserTableForammter.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="show-code" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="show-code" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="start" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="start" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="width" value="1616" />
+    <option name="height" value="867" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foolish" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foolish" type="462c0819:PsiDirectoryNode" />
+              <item name="dialect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foolish" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="clean-split-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foolish" type="462c0819:PsiDirectoryNode" />
+              <item name="format" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="mapperhelper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="mapperhelper" type="462c0819:PsiDirectoryNode" />
+              <item name="resolve" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="show-code" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mapper-core-1.0.5.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mapper-core-1.0.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mapper-core-1.0.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mapper-core-1.0.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mapper-core-1.0.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="mapperhelper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="show-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: tk.mybatis:mapper-core:1.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mapper-core-1.0.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="mapperhelper" type="462c0819:PsiDirectoryNode" />
+              <item name="resolve" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546166825928" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tk.mybatis.mapper" />
+      <recent name="tk.mybatis.mapper.mapperhelper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\2018\FoolishMapper\tempory\show-code\modules\business\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FoolishStartApp">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.masuguar.foolish.Test" />
+      <module name="clean-split-table" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.masuguar.foolish.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoolishStartApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.masuguar.foolish.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.masuguar.foolish.FoolishStartApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.FoolishStartApp" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56d40465-99f6-4aa8-864e-4be23aaac175" name="Default Changelist" comment="" />
+      <created>1544961074176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544961074176</updated>
+      <workItem from="1544961080576" duration="15204000" />
+      <workItem from="1545340128838" duration="7412000" />
+      <workItem from="1545583344324" duration="5269000" />
+      <workItem from="1545689684921" duration="4097000" />
+      <workItem from="1546141822834" duration="16593000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="48575000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22107969" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6940701" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32614556" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32884097" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="PlantUML" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32969153" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/annotation/ProviderSqlSource.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="method.getReturnType()" />
+        <watch expression="m.getReturnType()" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>ms.getConfiguration().getMappedStatement(ms.getId()+ InheritSqlHelper.INHERIT_KEY_SUFFIX,false)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/keygen/KeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.0.5/mapper-base-1.0.5-sources.jar!/tk/mybatis/mapper/provider/base/BaseSelectProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/EntityTable.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/DefaultEntityResolve.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="477" selection-start-line="477" selection-end-line="477" />
+          <folding>
+            <element signature="e#17106#17107#0" expanded="true" />
+            <element signature="e#22809#22810#0" expanded="true" />
+            <element signature="e#22855#22856#0" expanded="true" />
+            <element signature="e#24793#24794#0" expanded="true" />
+            <element signature="e#24833#24834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/BaseBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/mapperhelper/MapperTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+          <folding>
+            <element signature="e#0#8964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/scripting/defaults/RawSqlSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/SqlSourceBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/parsing/GenericTokenParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/javassist/util/proxy/DefineClassHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/javassist/ClassPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="462" selection-start-line="462" selection-end-line="462" />
+          <folding>
+            <element signature="e#2463#2464#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/javassist/CtClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="424" selection-start-line="424" selection-end-line="424" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/test/java/org/masuguar/foolish/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#83#84#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/scripting/xmltags/DynamicSqlSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/format/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/annotation/InheritTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-303">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.0.5/mapper-base-1.0.5-sources.jar!/tk/mybatis/mapper/provider/base/BaseInsertProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2419#2437#0" expanded="true" />
+            <element signature="e#2796#2807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/entity/EntityTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="291" column="46" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8188#8189#0" expanded="true" />
+            <element signature="e#8222#8223#0" expanded="true" />
+            <element signature="e#8257#8258#0" expanded="true" />
+            <element signature="e#8288#8289#0" expanded="true" />
+            <element signature="e#8344#8345#0" expanded="true" />
+            <element signature="e#8376#8377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start/start.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/controller/FoolishController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1195">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/EntityTable.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/resolve/DefaultEntityResolve.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#handleMultipleProperties#0;class#SelectKeyGenerator#0" />
+            <element signature="method#setValue#0;class#SelectKeyGenerator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/util/OGNL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="16" lean-forward="true" selection-end-line="216" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritQueryDialect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/dialect/InheritCreateDialect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean-split-table/src/main/java/com/masuguar/foolish/entity/InheritTableInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/service/common/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/mapperhelper/EntityHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/InheritSqlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="32" column="73" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/entity/InheritTableHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="674" column="31" lean-forward="true" selection-start-line="674" selection-start-column="31" selection-end-line="674" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.0.5/mapper-core-1.0.5-sources.jar!/tk/mybatis/mapper/mapperhelper/SqlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="54" column="48" selection-end-line="819" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/tk/mybatis/mapper/util/OGNL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="221" column="30" lean-forward="true" selection-start-line="221" selection-start-column="30" selection-end-line="221" selection-end-column="30" />
+          <folding>
+            <element signature="e#6495#6496#0" expanded="true" />
+            <element signature="e#6548#6549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/business/src/main/java/com/masuguar/foolish/resposity/formatter/UserTableForammter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -82,7 +82,8 @@ public class BaseInsertProvider extends MapperTemplate {
     }
 
     private void processInheritTable(StringBuilder sql, Class<?> entityClass, MappedStatement ms, EntityTable entityTable) {
-        InheritSqlHelper.newInheritTableStatement(ms,entityClass,entityTable);
+        InheritSqlHelper.newCreateInheritTableStatement(ms,entityClass,entityTable);
+        InheritSqlHelper.newQueryInheritTableStatement(ms,entityClass,entityTable);
     }
 
     public String insertSelective(MappedStatement ms) {

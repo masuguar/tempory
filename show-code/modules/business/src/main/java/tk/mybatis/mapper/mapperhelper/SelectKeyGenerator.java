@@ -23,6 +23,11 @@
  */
 package tk.mybatis.mapper.mapperhelper;
 
+import com.masuguar.foolish.dialect.InheritCreateDialect;
+import com.masuguar.foolish.entity.InheritTableInfo;
+import com.masuguar.foolish.format.Formatter;
+import tk.mybatis.mapper.entity.EntityTable;
+import net.sourceforge.plantuml.StringUtils;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.ExecutorException;
 import org.apache.ibatis.executor.keygen.KeyGenerator;
@@ -31,6 +36,7 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.RowBounds;
+import tk.mybatis.mapper.entity.InheritTableHelper;
 
 import java.sql.Statement;
 import java.util.List;
@@ -52,11 +58,40 @@ public class SelectKeyGenerator implements KeyGenerator {
 
     @Override
     public void processBefore(Executor executor, MappedStatement ms, Statement stmt, Object parameter) {
+        processInheritTable(executor,ms,parameter);
         if (executeBefore) {
-            ms.getConfiguration().getMappedStatement(ms.getId()+ InheritSqlHelper.INHERIT_KEY_SUFFIX,false);
             processGeneratedKeys(executor, ms, parameter);
         }
     }
+
+    private void processInheritTable( Executor executor, MappedStatement ms, Object parameter ) {
+        EntityTable entityTable = EntityHelper.getEntityTable(parameter.getClass());
+        if( !entityTable.isInheritable() ){
+            return;
+        }
+        Configuration configuration = ms.getConfiguration();
+        try {
+
+            String inheritTable = InheritTableHelper.getInheritTableName(parameter, entityTable);
+            MappedStatement queryTableStatment = configuration.getMappedStatement(ms.getId()+ InheritSqlHelper.INHERIT_QUERY_SUFFIX,false);
+            //TODO 这个后续要缓存起来，不用每次都查数据库
+            List<Integer> values = executor.query(queryTableStatment, inheritTable, RowBounds.DEFAULT, Executor.NO_RESULT_HANDLER);
+            if( values != null && !values.isEmpty() ){
+                Integer count = values.get(0);
+                if( count == 0 ){
+                    MappedStatement createTableStatment = configuration.getMappedStatement(ms.getId()+ InheritSqlHelper.INHERIT_CREATE_SUFFIX,false);
+                    InheritTableInfo tableInfo = new InheritTableInfo();
+                    tableInfo.setInheritTable(inheritTable);
+                    tableInfo.setMainTable(entityTable.getName());
+                    executor.query(createTableStatment,tableInfo,RowBounds.DEFAULT,Executor.NO_RESULT_HANDLER);
+                }
+            }
+        }catch (Exception e){
+            throw new ExecutorException("Error create inherit Table. Cause: " + e, e);
+        }
+    }
+
+
 
     @Override
     public void processAfter(Executor executor, MappedStatement ms, Statement stmt, Object parameter) {
@@ -72,8 +107,6 @@ public class SelectKeyGenerator implements KeyGenerator {
                 final Configuration configuration = ms.getConfiguration();
                 final MetaObject metaParam = configuration.newMetaObject(parameter);
                 if (keyProperties != null) {
-                    // Do not close keyExecutor.
-                    // The transaction will be closed by parent executor.
                     Executor keyExecutor = configuration.newExecutor(executor.getTransaction(), ExecutorType.SIMPLE);
                     List<Object> values = keyExecutor.query(keyStatement, parameter, RowBounds.DEFAULT, Executor.NO_RESULT_HANDLER);
                     if (values.size() == 0) {
@@ -86,8 +119,6 @@ public class SelectKeyGenerator implements KeyGenerator {
                             if (metaResult.hasGetter(keyProperties[0])) {
                                 setValue(metaParam, keyProperties[0], metaResult.getValue(keyProperties[0]));
                             } else {
-                                // no getter for the property - maybe just a single value object
-                                // so try that
                                 setValue(metaParam, keyProperties[0], values.get(0));
                             }
                         } else {

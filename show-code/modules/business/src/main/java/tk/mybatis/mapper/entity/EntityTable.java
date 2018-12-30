@@ -75,6 +75,7 @@ public class EntityTable {
         this.entityClass = entityClass;
     }
 
+
     /**
      * 生成当前实体的resultMap对象
      *
@@ -289,7 +290,7 @@ public class EntityTable {
 
     public void setInheritTable(InheritTable inheritTable){
         this.inheritable = true;
-        this.splitKey = inheritTable.key();
+        this.splitKey = inheritTable.spliter();
         this.formatter = inheritTable.formatter();
     }
 }

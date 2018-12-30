@@ -8,7 +8,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "USER_INFO")
-@InheritTable( key = "ctime", formatter = UserTableForammter.class)
+@InheritTable( formatter = UserTableForammter.class)
 public class UserInfo {
     @Id
     @KeySql(useGeneratedKeys = false, sql = "select nextval('s_user_info')")
