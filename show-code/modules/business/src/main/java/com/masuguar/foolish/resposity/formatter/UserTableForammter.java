@@ -1,12 +1,12 @@
 package com.masuguar.foolish.resposity.formatter;
 
-import com.masuguar.foolish.format.Formatter;
 import com.masuguar.foolish.resposity.entity.UserInfo;
+import tk.mybatis.mapper.inherit.InheritTableFormatter;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class UserTableForammter implements Formatter<UserInfo> {
+public class UserTableForammter implements InheritTableFormatter<UserInfo> {
     @Override
     public String preffix(UserInfo userInfo) {
         return "";

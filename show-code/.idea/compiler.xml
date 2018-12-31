@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
         <module name="business" />
-        <module name="clean-split-table" />
         <module name="provider" />
         <module name="refrerence" />
         <module name="start" />

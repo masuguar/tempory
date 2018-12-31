@@ -1,7 +1,7 @@
 package com.masuguar.foolish.resposity.entity;
 
-import com.masuguar.foolish.annotation.InheritTable;
 import com.masuguar.foolish.resposity.formatter.UserTableForammter;
+import tk.mybatis.mapper.annotation.InheritTable;
 import tk.mybatis.mapper.annotation.KeySql;
 
 import java.util.Date;
